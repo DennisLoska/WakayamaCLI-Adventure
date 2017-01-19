@@ -24,7 +24,8 @@ public class Room {
     private HashMap<String, Item> roomItems = new HashMap<String, Item>();
     private Item item = new Item();
 
-    public Room() {}
+    public Room() {
+    }
 
     /**
      * Create a room described "description". Initially, it has
