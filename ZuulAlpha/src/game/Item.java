@@ -41,11 +41,9 @@ public class Item {
         this.weight = weight;
     }
 
-
     public double getMAXWEIGHT() {
         return MAXWEIGHT;
     }
-
 
     public String getDescribtion() {
         return describtion;

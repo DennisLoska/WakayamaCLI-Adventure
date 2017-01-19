@@ -22,12 +22,9 @@ public class Room {
     private String description;
     private HashMap<String, Room> exits = new HashMap<String, Room>();
     private HashMap<String, Item> roomItems = new HashMap<String, Item>();
-    private static Item item;
+    private Item item = new Item();
 
-    public Room(Item itemStatic) {
-        item = itemStatic;
-
-    }
+    public Room() {}
 
     /**
      * Create a room described "description". Initially, it has
@@ -38,6 +35,8 @@ public class Room {
      */
     public Room(String description) {
         this.description = description;
+        item.createItems();
+        item.fillCollection();
     }
 
     /**
